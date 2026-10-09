@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afri-Tec Technologies | About Us</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Custom -->
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="site-header" id="siteHeader">
+        <nav class="site-nav container-fluid">
+
+            <!-- Logo --> 
+            <a href="home.html" class="brand">
+                <img src="assets/images/tec-logo.png" alt="Afri-Tec Technologies Logo" class="brand-logo">
+                <span class="brand-text">
+                    <span class="brand-name">AFRI-<span class="brand-name-accent">Tec</span></span>
+                    <span class="brand-tagline">Technologies</span>
+                </span>
+            </a>
+
+            <ul class="nav-links d-none d-lg-flex">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <a href="contact.html" class="btn-pill btn-cta d-none d-lg-inline-flex">SOS</a>
+
+            <button class="hamburger d-lg-none" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- ============ MOBILE FULL-SCREEN MENU ============ -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <ul class="mobile-menu-links">
+            <li style="--i:1"><a href="home.html">Home</a></li>
+            <li style="--i:2"><a href="about.html">About Us</a></li>
+            <li style="--i:3"><a href="product.html">Product</a></li>
+            <li style="--i:4"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="contact.html" class="btn-pill btn-cta btn-pill btn-cta-mobile" style="--i:5">SOS</a>
+    </div>
+
+    <main>
+        <!-- ============ PRODUCT HERO ============ -->
+        <section class="product-hero" id="product">
+            <div class="product-hero-bg w-100" aria-hidden="true"></div>
+            <div class="about-hero-overlay" aria-hidden="true"></div>
+
+            <div class="product-hero-inner">
+                <h1 class="product-hero-title fs-1">Peace of Mind<br>right in your wrist</h1>
+                <hr class="product-hero-divider">
+                <p class="product-hero-subtitle fs-5">Always connected, always protected</p>
+
+                <ul class="product-hero-features fs-6">
+                    <li>
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C12 22 19 15.4 19 10.2C19 6.2 15.9 3 12 3C8.1 3 5 6.2 5 10.2C5 15.4 12 22 12 22Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+                        <span class="fs-6">GPS<br>Location</span>
+                    </li>
+                    <li>
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 15V9C4 8.4 4.4 8 5 8H8L13 4V20L8 16H5C4.4 16 4 15.6 4 15Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16.5 9C17.4 9.7 18 10.8 18 12C18 13.2 17.4 14.3 16.5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M19 6.5C20.5 7.9 21.4 9.9 21.4 12C21.4 14.1 20.5 16.1 19 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                        <span class="fs-6">24/7<br>Monitoring</span>
+                    </li>
+                    <li>
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C12 3 6.5 10.2 6.5 14.5C6.5 17.5 8.9 20 12 20C15.1 20 17.5 17.5 17.5 14.5C17.5 10.2 12 3 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                        <span class="fs-6">Waterproof<br>IP67</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+
+            <div class="services-container">
+
+                <!-- Section heading -->
+                <div class="services-heading">
+
+                    <div class="section-eyebrow services-eyebrow">
+                        <span class="section-eyebrow-dot"></span>
+                        Our Services
+                    </div>
+
+                    <h2 class="services-title fs-1">
+                        Connected technology, built for Africa's growth
+                    </h2>
+
+                    <p class="services-subtitle fs-5">
+                        Afri-Tec’s technology is intuitive, quickly and easily tailored
+                        for specific business needs, and is poised for future growth
+                    </p>
+
+                </div>
+
+
+                <!-- Product cards -->
+                <div class="services-grid">
+
+
+                    <!-- ==================================================
+                        ALERT PANIC
+                        ================================================== -->
+
+                    <article class="service-card">
+
+                        <div class="service-image">
+                            <img src="assets/images/Afritec1.png" alt="Alert Panic">
+                        </div>
+
+                        <div class="service-name">
+                            <span></span>
+                            <h3 class="fs-5">ALERT PANIC</h3>
+                            <span></span>
+                        </div>
+
+
+                        <div class="service-features">
+
+                            <ul>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Sigfox alert detection
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Fully internal battery powered
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Full GPS Support
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Multiple LED device feedback
+                                    </span>
+                                </li>
+
+                            </ul>
+
+
+                            <ul>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Rugged, sealed enclosure
+                                    </span>
+                                </li>                                
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Long range connectivity
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Battery autonomy up to 2 years
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        ICASA approved
+                                    </span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <button class="how-it-works-btn btn-cta fs-6" type="button" data-video="ALERT_PANIC_YOUTUBE_ID">
+                            How It Work
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- ==================================================
+                        LIFELINE WATCH
+                        ================================================== -->
+
+                    <article class="service-card">
+
+                        <div class="service-image">
+                            <img src="assets/images/Afritec2.png" alt="Lifeline Watch">
+                        </div>
+
+                        <div class="service-name">
+                            <span></span>
+                            <h3 class="fs-5">LIFELINE WATCH</h3>
+                            <span></span>
+                        </div>
+
+
+                        <div class="service-features">
+
+                            <ul>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Wrist watch
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Replaceable straps
+                                        (Not included)
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Two-way voice
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Estimated GPS location
+                                    </span>
+                                </li>
+                                                       
+
+                            </ul>
+
+
+                            <ul>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        1-2 days battery life under
+                                        normal cellular network conditions
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        No Cellphone needed
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Waterproof - IP67
+                                    </span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <button class="how-it-works-btn btn-cta fs-6" type="button" data-video="LIFELINE_WATCH_YOUTUBE_ID">
+                            How It Work
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- ==================================================
+                        LIFELINE PENDANT
+                        ================================================== -->
+
+                    <article class="service-card">
+
+                        <div class="service-image">
+                            <img src="assets/images/Afritec 22.png" alt="Lifeline Pendant" class="mt-auto">
+                        </div>
+
+                        <div class="service-name mt-auto pendant">
+                            <span></span>
+                            <h3 class="fs-6">LIFELINE PENDANT</h3>
+                            <span></span>
+                        </div>
+
+
+                        <div class="service-features">
+
+                            <ul>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Used on keyring or lanyard
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Two-way voice
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Estimated GPS location
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        24/7 monitoring
+                                    </span>
+                                </li>
+                                
+                            </ul>
+
+
+                            <ul>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        Waterproof - IP67
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        No Cellphone needed
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="feature-icon fs-6">✓</span>
+                                    <span class="fs-6">
+                                        ICASA approved
+                                    </span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <button
+                            class="how-it-works-btn btn-cta fs-6"
+                            type="button"
+                            data-video="LIFELINE_PENDANT_YOUTUBE_ID"
+                        >
+                            How It Work
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="sos-app-section">
+
+        <div class="sos-app-container">
+
+            <!-- Heading -->
+            <div class="sos-app-heading">
+                <span class="section-eyebrow">
+                    <span></span>
+                    The Afri-Tec App
+                </span>
+
+                <h2 class="fs-1">Your Command Centre for Every Emergency</h2>
+            </div>
+
+
+            <!-- Main content -->
+            <div class="sos-app-content">
+
+                <div class="sos-app-text">
+
+                    <p class="fs-6">
+                        The Afri-Tec SOS app connects you, your device, and the 
+                        people you trust. It's where your emergency contacts are 
+                        stored, alerts are sent from, and your location is shared the 
+                        moment something goes wrong so help is never more than a 
+                        press away.
+                    </p>
+
+                    <p class="fs-6">
+                        Your personal safety command center, 
+                        up, and ready the moment it's needed.
+                    </p>
+
+                </div>
+
+
+                <!-- Reusing your existing phone system -->
+                <div class="companion-phones">
+                    <div class="phone phone-one">                   
+                        <!-- Phone frame -->
+                        <img src="assets/images/sos-app.png" alt="" class="phone-frame-image p-frame">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="sos-app-benefits justify-content-center align-items-center d-flex">
+                <div>
+                    <span></span>
+                    <p class="fs-6">Free to download</p>
+                </div>
+
+                <div>
+                    <span></span>
+                    <p class="fs-6">Works in every Afri-Tec device</p>
+                </div>
+
+                <div>
+                    <span></span>
+                    <p class="fs-6">Set up in under 5 minutes</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        </section>
+
+        <section class="getting-started-section">
+
+            <div class="getting-started-container">
+
+                <div class="getting-started-heading">
+
+                    <div class="getting-started-eyebrow">
+                        <span></span>
+                        Getting Started
+                    </div>
+
+                    <h2 class="getting-started-title fs-1">
+                        Set up your safety net in 4 steps
+                    </h2>
+
+                    <p class="getting-started-subtitle fs-5">
+                        No technical know how needed just your phone and a few minutes.
+                    </p>
+
+                </div>
+
+
+                <div class="getting-started-steps">
+
+                    <article class="getting-started-step">
+
+                        <div class="getting-started-number">1</div>
+
+                        <h3 class="fs-5">Download the app</h3>
+
+                        <p class="fs-6">
+                            Get the Afri-Tec SOS app free from the App Store or Google
+                            Play and create your account.
+                        </p>
+
+                    </article>
+
+
+                    <article class="getting-started-step">
+
+                        <div class="getting-started-number">2</div>
+
+                        <h3 class="fs-5">Pair your device</h3>
+
+                        <p class="fs-6">
+                            Turn on your Alert Panic, Lifeline Watch, or Lifeline
+                            Pendant and connect it to the app in a few taps.
+                        </p>
+
+                    </article>
+
+
+                    <article class="getting-started-step">
+
+                        <div class="getting-started-number">3</div>
+
+                        <h3 class="fs-5">Add your contacts</h3>
+
+                        <p class="fs-6">
+                            Choose the people who should be notified first: family,
+                            guardians, or your monitoring team.
+                        </p>
+
+                    </article>
+
+
+                    <article class="getting-started-step">
+
+                        <div class="getting-started-number">4</div>
+
+                        <h3 class="fs-5">Send a test alert</h3>
+
+                        <p class="fs-6">
+                            Try it once so you know exactly what happens and that
+                            your contacts do too before you ever need it for real.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <!-- VIDEO -->
+                <div class="getting-started-video">
+
+                    <span class="getting-started-video-text fs-6">
+                        Need a hand? Watch our setup video
+                    </span>
+
+                    <button class="getting-started-video-btn fs-6" type="button" data-video="ALERT_PANIC_YOUTUBE_ID">
+                        Watch now
+                    </button>
+
+                    <span class="getting-started-video-arrow fs-6">
+                        →
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    <section class="devices-strip">
+    <div class="container">
+        <div class="row row-cols-2 row-cols-md-5 g-4 justify-content-center text-center">
+    
+        <!-- 1. Phone app -->
+        <div class="col device-item">
+            <div class="device-img-wrap">
+            <img src="assets/images/ssdds.png" alt="Guardian App">
+            </div>
+        </div>
+    
+        <!-- 2. Oval GPS tracker fob -->
+        <div class="col device-item">
+            <div class="device-img-wrap">
+            <img src="assets/images/trackr1.png" alt="GPS Fob">
+            </div>
+        </div>
+    
+        <!-- 3. Smartwatch -->
+        <div class="col device-item">
+            <div class="device-img-wrap">
+            <img src="assets/images/watch1.png" alt="Kids Watch">
+            </div>
+        </div>
+    
+        <!-- 4. Mini tracker box -->
+        <div class="col device-item">
+            <div class="device-img-wrap">
+            <img src="assets/images/track.png" alt="Mini Tracker">
+            </div>
+        </div>
+    
+        <!-- 5. SOS app icon -->
+        <div class="col device-item">
+            <div class="device-img-wrap">
+            <img src="assets/images/sosoo.png" alt="SOS Alert">
+            </div>
+        </div>
+    
+        </div>
+    </div>
+    </section>
+
+    <!-- ==========================================================
+        VIDEO MODAL
+        ========================================================== -->
+
+    <div class="video-modal" id="videoModal" aria-hidden="true">
+
+        <div class="video-modal-backdrop"></div>
+
+        <div class="video-modal-card" role="dialog" aria-modal="true" aria-label="Product video">
+
+            <button class="video-modal-close" id="videoModalClose" type="button" aria-label="Close video">
+                &times;
+            </button>
+
+
+            <!-- TV frame -->
+            <div class="tv-frame">
+
+                <div class="tv-screen">
+
+                    <iframe
+                        id="productVideo"
+                        src=""
+                        title="Afri-Tec product video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <div class="tv-stand"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </main>
+    
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer py-5">
+        <div class="footer-inner">
+    
+            <div class="footer-col footer-brand">
+                <div class="log">
+                <!-- Logo --> 
+                    <a href="home.html" class="brand">
+                        <img src="assets/images/tec-logo.png" alt="Afri-Tec Technologies Logo" class="brand-logo">
+                        <span class="brand-text">
+                            <span class="brand-name">AFRI-<span class="brand-name-accent">Tec</span></span>
+                            <span class="brand-tagline">Technologies</span>
+                        </span>
+                    </a>
+                </div>
+                <p class="footer-tagline">Smart safety and tracking 
+technology.</p>
+                <div class="footer-address">
+                    <p>Ground Floor, 35 Ferguson Road, <br>Illovo, Sandton, 2196</p>
+                </div>
+            </div>
+    
+            <div class="footer-col">
+                <h3 class="footer-heading">Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-col">
+                <h3 class="footer-heading">Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8C8 13.6 10.4 16 13.2 17.4L15.4 15.2C15.7 14.9 16.1 14.8 16.5 15C17.7 15.4 19 15.6 20.2 15.6C20.8 15.6 21.2 16 21.2 16.6V20.2C21.2 20.8 20.8 21.2 20.2 21.2C10.7 21.2 3 13.5 3 4C3 3.4 3.4 3 4 3H7.6C8.2 3 8.6 3.4 8.6 4C8.6 5.2 8.8 6.5 9.2 7.7C9.3 8.1 9.2 8.5 9 8.8L6.6 10.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                        <span>Phone: +27 (011) 084-1100</span>
+                    </li>
+                    <li>
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 6.5L12 12.5L20 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Email: info@afri-tec.com</span>
+                    </li>
+                    <li>
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5V16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8" cy="7.3" r="1" fill="currentColor"/><path d="M11.5 16.5V13C11.5 11.6 12.5 10.5 13.8 10.5C15.1 10.5 16 11.6 16 13V16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M11.5 10.5V16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                        <span>linkedin.afri-tec.com...</span>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+    
+        <hr class="footer-divider">
+    
+        <p class="footer-bottom">&copy; <span id="footerYear">2026</span> Afri-Tec Technologies. All rights reserved.</p>
+    </footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

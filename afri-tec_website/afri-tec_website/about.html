@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afri-Tec Technologies | About Us</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Custom -->
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="site-header" id="siteHeader">
+    <nav class="site-nav container-fluid">
+
+        <!-- Logo --> 
+        <a href="home.html" class="brand">
+            <img src="assets/images/tec-logo.png" alt="Afri-Tec Technologies Logo" class="brand-logo">
+            <span class="brand-text">
+                <span class="brand-name">AFRI-<span class="brand-name-accent">Tec</span></span>
+                <span class="brand-tagline">Technologies</span>
+            </span>
+        </a>
+
+        <ul class="nav-links d-none d-lg-flex">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <a href="contact.html" class="btn-pill btn-cta d-none d-lg-inline-flex">SOS</a>
+
+        <button class="hamburger d-lg-none" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+
+    </nav>
+    </header>
+
+    <!-- ============ MOBILE FULL-SCREEN MENU ============ -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <ul class="mobile-menu-links">
+            <li style="--i:1"><a href="home.html">Home</a></li>
+            <li style="--i:2"><a href="about.html">About Us</a></li>
+            <li style="--i:3"><a href="product.html">Product</a></li>
+            <li style="--i:4"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="contact.html" class="btn-pill  btn-pill btn-cta-mobile btn-cta" style="--i:5">SOS</a>
+    </div>
+
+<main>
+    <!-- ============ ABOUT HERO ============ -->
+    <section class="about-hero" id="about">
+        <div class="about-hero-bg" aria-hidden="true"></div>
+        <div class="about-hero-overlay" aria-hidden="true"></div>
+
+        <div class="about-hero-inner">
+            <div class="about-hero-content">
+                <h1 class="about-hero-title">Technology That<br>Helps Protect<br>What Matters Most</h1>
+                <p class="about-hero-text">Smart safety and tracking solutions designed to help people, families, businesses and communities stay connected, informed, and protected.</p>
+            </div>
+
+            <ul class="about-features">
+                <li class="about-feature">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C12 22 19 15.4 19 10.2C19 6.2 15.9 3 12 3C8.1 3 5 6.2 5 10.2C5 15.4 12 22 12 22Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+                    <h3>Smart Safety</h3>
+                    <p>Protection where it matters</p>
+                </li>
+                <li class="about-feature">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="8" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M4.5 20C4.9 16.3 7.1 14 10 14C12.9 14 15.1 16.3 15.5 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16.5 7C17.6 7.7 18.3 8.9 18.3 10.3C18.3 11.7 17.6 12.9 16.5 13.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18.7 4.8C20.6 5.9 21.9 7.9 21.9 10.3C21.9 12.6 20.6 14.7 18.7 15.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    <h3>Connected</h3>
+                    <p>Stay connected when help is needed</p>
+                </li>
+                <li class="about-feature">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8.5" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M2.8 19.5C3.3 16.1 5.6 14 8.5 14C11.4 14 13.7 16.1 14.2 19.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="16.5" cy="8.5" r="2.3" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 14.2C17.9 14.4 19.8 16.3 20.2 19.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    <h3>Real Impact</h3>
+                    <p>Technology built for real-world situations</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT DETAILS ============ -->
+    <section class="about-details">
+        <div class="about-details-inner">
+
+            <div class="about-details-text">
+                <p class="eyebrow text-danger">
+                    <span class="section-eyebrow-dot"></span>
+                    About Afri-Tec
+                </p>
+                <h2 class="about-details-title fs-1">Where Safety Meets Simplicity</h2>
+                <p class="about-details-lead fs-6">At Afri-Tec, we believe that safety should be simple, reliable and accessible.</p>
+                <p class="fs-6">We provide smart safety, emergency alert, and tracking solutions designed to help people stay connected and protected when it matters most. Our technology brings together GPS tracking, emergency alerts, communication and connected devices to provide practical solutions for individuals, families, businesses and organisations.</p>
+                <p class="fs-6">Whether it's protecting a loved one, supporting an elderly parent, or helping businesses monitor valuable assets, Afri-Tec provides technology designed for real-world situations.</p>
+            </div>
+
+            <div class="approach mt-auto">
+                <h3 class="approach-title fs-1">Our Approach</h3>
+                <p class="approach-subtitle fs-5">We focus on three things:</p>
+
+                <div class="approach-cards">
+                    <div class="approach-card">
+                        <div class="approach-card-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L4 5.5V11C4 16.2 7.4 20.7 12 22C16.6 20.7 20 16.2 20 11V5.5L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 12.2L10.8 14.6L15.6 9.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <h4 class="fs-5">Safety</h4>
+                        </div>
+                        <p class="fs-6">Reliable technology that helps people respond quickly during an emergency.</p>
+                    </div>
+
+                    <div class="approach-card">
+                        <div class="approach-card-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C12 22 19 15.4 19 10.2C19 6.2 15.9 3 12 3C8.1 3 5 6.2 5 10.2C5 15.4 12 22 12 22Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+                            <h4 class="fs-5">Tracking</h4>
+                        </div>
+                        <p class="fs-6">Helping families and organisations know where their people or assets are.</p>
+                    </div>
+
+                    <div class="approach-card approach-card-full">
+                        <div class="approach-card-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 9.5C7.6 10.4 7 11.6 7 13C7 14.4 7.6 15.6 8.5 16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M15.5 9.5C16.4 10.4 17 11.6 17 13C17 14.4 16.4 15.6 15.5 16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M5.5 7C4.2 8.5 3.5 10.6 3.5 13C3.5 15.4 4.2 17.5 5.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18.5 7C19.8 8.5 20.5 10.6 20.5 13C20.5 15.4 19.8 17.5 18.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="13" r="1.6" fill="currentColor"/></svg>
+                            <h4 class="fs-5">Connection</h4>
+                        </div>
+                        <p class="fs-6">Keeping people connected through smart devices and communication technology.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ THE PROBLEM WE SOLVE ============ -->
+<section class="problem-section py-4">
+    <div class="problem-inner">
+
+        <p class="section-eyebrow problem-eyebrow">
+            <span class="section-eyebrow-dot"></span>
+            The Problem We Solve
+        </p>
+
+        <div class="problem-grid">
+            <div class="problem-text">
+                <h2 class="problem-title fs-1">Every second counts<br>in an emergency</h2>
+                <p class="fs-6">Emergencies don't wait for help to be within reach. The time between something going wrong and someone knowing about it can make all the difference.</p>
+                <p class="fs-6">Afri-Tec was built to close that gap connecting people, alerts, and location the moment they're needed most.</p>
+            </div>
+
+            <div class="problem-steps">
+                <div class="problem-step">
+                    <span class="problem-step-number">1</span>
+                    <div class="problem-step-content">
+                        <h3 class="fs-5">Instant alert delivery</h3>
+                        <p class="fs-6">The moment a button is pressed, a signal is sent no waiting, no delay.</p>
+                    </div>
+                </div>
+                <div class="problem-step">
+                    <span class="problem-step-number">2</span>
+                    <div class="problem-step-content">
+                        <h3 class="fs-5">Real-time location</h3>
+                        <p class="fs-6">GPS tracking means responders know exactly where to go, not just that something is wrong.</p>
+                    </div>
+                </div>
+                <div class="problem-step">
+                    <span class="problem-step-number">3</span>
+                    <div class="problem-step-content">
+                        <h3 class="fs-5">Two-way communication</h3>
+                        <p class="fs-6">Direct voice communication so responders always know the full situation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ TRUST & COMPLIANCE ============ -->
+<section class="trust-section">
+    <div class="trust-inner">
+
+        <p class="section-eyebrow">
+            <span class="section-eyebrow-dot"></span>
+            Trust & Compliance
+        </p>
+
+        <h2 class="trust-title fs-1">Trust & Compliance: Reliability, Proven</h2>
+        <p class="trust-subtitle fs-5">Real safety doesn't come from a promise  it comes from testing, standards, and consistency you can count on. Afri-Tec is held to that bar at every stage.</p>
+
+        <div class="trust-grid">
+            <div class="trust-card">
+                <div class="trust-card-header">
+                    <span class="trust-card-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <h3 class="fs-5">Compliance & Testing</h3>
+                </div>
+                <p class="trust-card-desc fs-6">Before any device reaches you, it earns its place through rigorous checks.</p>
+
+                <ul class="trust-checklist">
+                    <li>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span class="fs-6"> ICASA-certified communication & radio equipment</span>
+                    </li>
+                    <li>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span class="fs-6">Field-tested network coverage and reliability</span>
+                    </li>
+                    <li>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span class="fs-6"> Battery life verified under real-world conditions</span>
+                    </li>
+                    <li>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span class="fs-6">Alert response times independently monitored</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="trust-text mt-auto">
+                <p class="fs-6">Our devices are ICASA approved, meeting South Africa's regulatory standards for communication and radio equipment  but that's our baseline, not our finish line.</p>
+                <p class="fs-6">Beyond compliance, we test network reliability, battery performance, and alert response times, so that when someone presses that button, the system responds no delays, no failure points.</p>
+                <p class="trust-highlight fs-6">
+                    <span class="trust-highlight-dot"></span>
+                    We also work alongside organisations focused on personal safety and GBV awareness, because protection technology is most powerful when it's part of a wider support system.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+ 
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer py-5">
+    <div class="footer-inner">
+ 
+        <div class="footer-col footer-brand">
+            <div class="log">
+            <!-- Logo --> 
+            <a href="home.html" class="brand">
+                <img src="assets/images/tec-logo.png" alt="Afri-Tec Technologies Logo" class="brand-logo">
+                <span class="brand-text">
+                    <span class="brand-name">AFRI-<span class="brand-name-accent">Tec</span></span>
+                    <span class="brand-tagline">Technologies</span>
+                </span>
+            </a>
+          </div>
+            <p class="footer-tagline">Smart safety and tracking 
+technology.</p>
+            <div class="footer-address">
+                <p>Ground Floor, 35 Ferguson Road, <br>Illovo, Sandton, 2196</p>
+            </div>
+        </div>
+ 
+        <div class="footer-col">
+            <h3 class="footer-heading">Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+ 
+        <div class="footer-col">
+            <h3 class="footer-heading">Contact Info</h3>
+            <ul class="footer-contact">
+                <li>
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8C8 13.6 10.4 16 13.2 17.4L15.4 15.2C15.7 14.9 16.1 14.8 16.5 15C17.7 15.4 19 15.6 20.2 15.6C20.8 15.6 21.2 16 21.2 16.6V20.2C21.2 20.8 20.8 21.2 20.2 21.2C10.7 21.2 3 13.5 3 4C3 3.4 3.4 3 4 3H7.6C8.2 3 8.6 3.4 8.6 4C8.6 5.2 8.8 6.5 9.2 7.7C9.3 8.1 9.2 8.5 9 8.8L6.6 10.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                    <span>Phone: +27 (011) 084-1100</span>
+                </li>
+                <li>
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 6.5L12 12.5L20 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Email: info@afri-tec.com</span>
+                </li>
+                <li>
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5V16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8" cy="7.3" r="1" fill="currentColor"/><path d="M11.5 16.5V13C11.5 11.6 12.5 10.5 13.8 10.5C15.1 10.5 16 11.6 16 13V16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M11.5 10.5V16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    <span>linkedin.afri-tec.com...</span>
+                </li>
+            </ul>
+        </div>
+ 
+    </div>
+ 
+    <hr class="footer-divider">
+ 
+    <p class="footer-bottom">&copy; <span id="footerYear">2026</span> Afri-Tec Technologies. All rights reserved.</p>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
